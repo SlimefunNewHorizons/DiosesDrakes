@@ -22,6 +22,12 @@
 
 ## Scope at a glance
 
+Build baseline: Paper 1.21.11, Java 21. The optional Rust FFM bridge resolves
+the runtime API during initialization and no longer requires `--enable-preview`.
+This also allows loading its Java 21 class on Java 25. Building or testing the
+bridge alone does not certify the full plugin on Paper 26.2; a server test is
+still required before declaring that compatibility.
+
 DiosesDrakes is the persistent divine-progression authority for DrakesCraft.
 It owns UUID profiles, pantheon and patron selection, favor, skills, loadouts,
 cooldowns, upkeep, Convergence, passive blessings and auditable divine
